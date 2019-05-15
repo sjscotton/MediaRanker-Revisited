@@ -51,7 +51,7 @@ describe WorksController do
 
         get works_path
 
-        must_respond_with :success
+        must_respond_with :not_found
       end
     end
     it "redirects to root_path if no user logged in" do
